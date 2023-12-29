@@ -44,7 +44,7 @@ This repository contains my personal configurations for the Hyprland desktop env
 
 - **hyprpaper:**  For launch wallpapers.
 
-___
+
 ## Configure Files
 
 #### You can use these configurations to personalize your Hyprland desktop environment:
@@ -60,7 +60,7 @@ cd arch-linux-hyprland-conf
 mv hypr scripts swappy swaylock wallpapers waybar wlogout wofi /home/$USER/.config/
 ```
 
----
+
 ## Installation tools, themes, icons and etc.
    
 #### Install the required tools on Arch Linux using the following commands:
@@ -81,7 +81,7 @@ sudo pacman -Syu wofi swaylock swayidle kitty thunar hyprpaper swappy grim slurp
   ```bash
   sudo pacman -S brightnessctl pavucontrol pamixer polkit-kde-agent mako
   ```
----
+
 - #### And install other tools from Arch linux User Repository - ```AUR```
 - Install ```swaylock-effects```
   ```bash
