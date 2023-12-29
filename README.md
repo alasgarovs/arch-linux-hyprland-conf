@@ -70,43 +70,43 @@ mv hypr scripts swappy swaylock wallpapers waybar wlogout wofi /home/$USER/.conf
 sudo pacman -Syu wofi swaylock swayidle kitty thunar hyprpaper swappy grim slurp waybar
 ```
 - Install waybar font styles and icons.
-  ```bash
-  sudo pacman -S otf-font-awesome ttf-font-awesome ttf-jetbrains-mono ttf-arimo-nerd
-  ```
+ ```bash
+ sudo pacman -S otf-font-awesome ttf-font-awesome ttf-jetbrains-mono ttf-arimo-nerd
+ ```
 - Install themes and gnome-tweak. After install themes and icons run ```gnome-tweaks``` in terminal and set icons and themes as you want.
-  ```bash
-  sudo pacman -S gtk4 breeze-gtk materia-gtk-theme arc-gtk-theme gnome-tweaks
-  ```
+ ```bash
+ sudo pacman -S gtk4 breeze-gtk materia-gtk-theme arc-gtk-theme gnome-tweaks
+ ```
 - Install volume, brightness, notification tools.
-  ```bash
-  sudo pacman -S brightnessctl pavucontrol pamixer polkit-kde-agent mako
-  ```
+ ```bash
+ sudo pacman -S brightnessctl pavucontrol pamixer polkit-kde-agent mako
+ ```
 
 - #### And install other tools from Arch linux User Repository - ```AUR```.
 - Install ```swaylock-effects```
-  ```bash
-  git clone https://aur.archlinux.org/swaylock-effects.git
-  cd swaylock-effects
-  makepkg -si
-  ```
+ ```bash
+ git clone https://aur.archlinux.org/swaylock-effects.git
+ cd swaylock-effects
+ makepkg -si
+ ```
 - Install ```qimgv```.
-  ```bash
-  git clone https://aur.archlinux.org/qimgv.git
-  cd qimgv
-  makepkg -si
-  ```
+ ```bash
+ git clone https://aur.archlinux.org/qimgv.git
+ cd qimgv
+ makepkg -si
+ ```
 - Install ```wlogout```.
-  ```bash
-  git clone https://aur.archlinux.org/wlogout-git.git
-  cd qimgv
-  makepkg -si
-  ```
+ ```bash
+ git clone https://aur.archlinux.org/wlogout-git.git
+ cd qimgv
+ makepkg -si
+ ```
 - Instal ```WhiteSur Icons``` for change applications icon style.
-  ```bash
-  git clone https://aur.archlinux.org/whitesur-icon-theme.git
-  cd whitesur-icon-theme
-  makepkg -si
-  ```
+ ```bash
+ git clone https://aur.archlinux.org/whitesur-icon-theme.git
+ cd whitesur-icon-theme
+ makepkg -si
+ ```
 
 ### 
 
