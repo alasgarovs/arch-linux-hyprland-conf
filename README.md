@@ -65,11 +65,11 @@ mv hypr scripts swappy swaylock wallpapers waybar wlogout wofi /home/$USER/.conf
    
 #### Install the required tools on Arch Linux using the following commands:
 
-- #### We need install some tools with ```pacman```
+- #### We need install some tools with ```pacman```.
 ```bash
 sudo pacman -Syu wofi swaylock swayidle kitty thunar hyprpaper swappy grim slurp waybar
 ```
-- Install waybar font styles and icons
+- Install waybar font styles and icons.
   ```bash
   sudo pacman -S otf-font-awesome ttf-font-awesome ttf-jetbrains-mono ttf-arimo-nerd
   ```
@@ -82,7 +82,7 @@ sudo pacman -Syu wofi swaylock swayidle kitty thunar hyprpaper swappy grim slurp
   sudo pacman -S brightnessctl pavucontrol pamixer polkit-kde-agent mako
   ```
 
-- #### And install other tools from Arch linux User Repository - ```AUR```
+- #### And install other tools from Arch linux User Repository - ```AUR```.
 - Install ```swaylock-effects```
   ```bash
   git clone https://aur.archlinux.org/swaylock-effects.git
