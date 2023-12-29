@@ -4,19 +4,23 @@ This repository contains my personal configurations for the Hyprland desktop env
 
 
 ### This is my hyprland desktop: waybar and kitty terminal
-![kitty](https://github.com/Sabuhi-Alasgarli/hyprland-configurations/assets/70092601/68a4f975-a753-40f6-9382-a390040ae3cf)
+![kitty](https://github.com/AlasgarovS/arch-linux-hyprland-conf/assets/70092601/74138c48-91b7-4ce2-a450-f16a9171ae11)
+
 
 
 ### This is my hyprland lock menu with wlogout
-![wlogout](https://github.com/Sabuhi-Alasgarli/hyprland-configurations/assets/70092601/75655dba-97d7-4f02-ad83-a2f3ef8f3da0)
+![wlogout](https://github.com/AlasgarovS/arch-linux-hyprland-conf/assets/70092601/6673ce4b-ef38-47b8-a1cb-11625dcc5149)
+
 
 
 ### This is my hyprland search menu with wofi and whitesur icons
-![wofi](https://github.com/Sabuhi-Alasgarli/hyprland-configurations/assets/70092601/af83184a-48bc-4643-9ee9-41b8dbee2697)
+![wofi](https://github.com/AlasgarovS/arch-linux-hyprland-conf/assets/70092601/21cb31c8-7737-44d8-a345-d1e1d0178af7)
+
 
 
 ### This is my hyprland file manager with thunar file manager
-![thunar](https://github.com/Sabuhi-Alasgarli/hyprland-configurations/assets/70092601/60f1db60-a297-4e3c-a370-4eda8aa94932)
+![thunar](https://github.com/AlasgarovS/arch-linux-hyprland-conf/assets/70092601/7edd6de1-876d-40e8-8a38-7f63eef221c3)
+
 
 
 
