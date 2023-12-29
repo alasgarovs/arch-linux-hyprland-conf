@@ -55,7 +55,7 @@ This repository contains my personal configurations for the Hyprland desktop env
  
 - Copy repository to your local machine.
 ```bash
-git clone https://github.com/Sabuhi-Alasgarli/arch-linux-hyprland-conf.git
+git clone https://github.com/AlasgarovS/arch-linux-hyprland-conf.git
 cd arch-linux-hyprland-conf
 ```
 
