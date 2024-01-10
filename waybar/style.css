@@ -65,21 +65,21 @@ window#waybar.chromium {
 }
 
 #workspaces button {
-    border: 1px dotted transparent;
-    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
     padding: 0;
-    margin: 0;
-    color: transparent;
-    background: rgb(255, 255, 255);
+    margin: 1px;
+    color: grey;
+    background: rgb(0, 0, 0);
     transition: all 0.3s ease-in-out;
-    opacity:0.4;
+    opacity:0.6;
     min-width: 20px;
     min-height:5px;
   }
   
   #workspaces button.active {
-    color: black;
-    min-width: 40px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
     opacity:1.0;
   }
   
@@ -92,7 +92,6 @@ window#waybar.chromium {
     padding: 0px 5px 0px 5px;
   }
   #clock {
-    padding-left: 50px;
     padding-right: 50px;
     margin-right: 2px;
   }
