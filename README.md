@@ -81,9 +81,9 @@ sudo pacman -Syu wofi swaylock swayidle kitty thunar hyprpaper swappy grim slurp
  ```bash
  sudo pacman -S gtk4 breeze-gtk materia-gtk-theme arc-gtk-theme gnome-tweaks
  ```
-- Install volume, brightness, notification tools.
+- Install volume, brightness, notification, bluetooth tools.
  ```bash
- sudo pacman -S brightnessctl pavucontrol pamixer polkit-kde-agent mako
+ sudo pacman -S brightnessctl pavucontrol pamixer polkit-kde-agent mako blueman bluez bluez-utils
  ```
 
 - #### And install other tools from Arch linux User Repository - ```AUR```.
