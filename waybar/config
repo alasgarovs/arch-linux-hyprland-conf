@@ -24,7 +24,8 @@
         "cpu", 
         "memory", 
         // "keyboard-state", 
-        "network", 
+        "network",
+        "bluetooth",
         "battery",
         "backlight",
         "pulseaudio",
@@ -201,6 +202,14 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "bluetooth": {
+        "format": "{status} ",
+        "format-disabled": "{status} ",
+        "format-off": "{status} ",
+        "interval": 30,
+        //"on-click": "blueman-manager"
     }
+
 }
 

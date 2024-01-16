@@ -46,6 +46,7 @@ window#waybar.chromium {
 #disk,
 #temperature,
 #backlight,
+#bluetooth,
 #network,
 #custom-power,
 #pulseaudio,
