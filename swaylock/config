@@ -5,14 +5,14 @@ clock
 timestr=%R
 datestr=%a, %e of %B
 
-image=~/.config/wallpapers/remembering.jpg
+image=~/.config/wallpapers/mig-29.jpg
 
 # Fade in time
 fade-in=1
 
 # Effect for background
 #effect-blur=20x2
-#effect-greyscale
+effect-greyscale
 #effect-pixelate=5
 
 # Show/Hide indicator circle
