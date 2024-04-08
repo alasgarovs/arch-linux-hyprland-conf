@@ -1,46 +1,17 @@
 # Arch Linux Hyprland Configurations Setup
 
-This repository contains my personal configurations for the Hyprland desktop environment. It includes configurations for various tools and applications:
-
-
-### This is my hyprland desktop: waybar and kitty terminal
-![kitty](https://github.com/alasgarovs/arch-linux-hyprland-conf/assets/70092601/496f4692-7110-48e5-b0bc-2169dcb3d9fc)
-
-
-
-
-### This is my hyprland lock menu with wlogout
-![swaylock](https://github.com/alasgarovs/arch-linux-hyprland-conf/assets/70092601/0ff9ed7b-7241-4e1a-989a-b1093aade4be)
-
-
-
-
-### This is my hyprland search menu with wofi and whitesur icons
-![wofi](https://github.com/alasgarovs/arch-linux-hyprland-conf/assets/70092601/68b495f7-1412-4cb2-9094-95cfbcf3d3a6)
-
-
-
-
-### This is my hyprland file manager with thunar file manager
-![thunar](https://github.com/alasgarovs/arch-linux-hyprland-conf/assets/70092601/b66d45e8-ba01-4d9d-b271-1065bccc2579)
-
-
-
+### This repository contains my personal configurations for the Hyprland desktop environment. It includes configurations for various tools and applications
 
 
 ## About Tools
 
 - **waybar:**  Waybar status bar, a highly customizable status bar for wayland-based compositors.
 
-- **swaylock-effects:**  Swaylock, a screen locker for Wayland.
-
-- **swayidle:** Swayidle set lock screen after custom time.
-
 - **wlogout:** Wlogout, custom menu for poweroff, lock, logout and other.
 
-- **qimgv:** Qimgv for the Pictures.
+- **wofi:**  Wofi is a launcher for Sway that provides a quick way to open applications and search for files.
 
-- **swappy:** Swappy for the Pictures.
+- **qimgv** and **swappy:** Qimgv and Swappy for the Pictures.
 
 - **grim:** Grim for the take screenshot.
 
@@ -48,7 +19,9 @@ This repository contains my personal configurations for the Hyprland desktop env
 
 - **thunar:**  Thunar file manager, a file manager for the Xfce desktop environment.
 
-- **wofi:**  Wofi is a launcher for Sway that provides a quick way to open applications and search for files.
+- **hyprlock:**  Hyprlock, a screen locker.
+
+- **hypridle:** Hypridle set lock screen after custom time.
 
 - **hyprpaper:**  For launch wallpapers.
 
@@ -58,14 +31,14 @@ This repository contains my personal configurations for the Hyprland desktop env
 #### You can use these configurations to personalize your Hyprland desktop environment:
  
 - Copy repository to your local machine.
-```bash
+```console
 git clone https://github.com/alasgarovs/arch-linux-hyprland-conf.git
 cd arch-linux-hyprland-conf
 ```
 
 - After copy folders to ```.config``` folder under ```/home/$USER```.
-```bash
-mv hypr scripts swappy swaylock wallpapers waybar wlogout wofi /home/$USER/.config/
+```console
+mv hypr scripts swappy wallpapers waybar wlogout wofi /home/$USER/.config/
 ```
 
 
@@ -74,43 +47,38 @@ mv hypr scripts swappy swaylock wallpapers waybar wlogout wofi /home/$USER/.conf
 #### Install the required tools on Arch Linux using the following commands:
 
 - #### We need install some tools with ```pacman```.
-```bash
-sudo pacman -Syu wofi swaylock swayidle kitty thunar hyprpaper swappy grim slurp waybar
+```console
+sudo pacman -Syu wofi waybar kitty thunar hyprpaper hyprlock hypridle swappy grim slurp
 ```
 - Install waybar font styles and icons.
- ```bash
+ ```console
  sudo pacman -S otf-font-awesome ttf-font-awesome ttf-jetbrains-mono ttf-arimo-nerd
  ```
 - Install themes and gnome-tweak. After install themes and icons run ```gnome-tweaks``` in terminal and set icons and themes as you want.
- ```bash
+ ```console
  sudo pacman -S gtk4 breeze-gtk materia-gtk-theme arc-gtk-theme gnome-tweaks
  ```
 - Install volume, brightness, notification, bluetooth tools.
- ```bash
+ ```console
  sudo pacman -S brightnessctl pavucontrol pamixer polkit-kde-agent mako blueman bluez bluez-utils
  ```
 
 - #### And install other tools from Arch linux User Repository - ```AUR```.
-- Install ```swaylock-effects```
- ```bash
- git clone https://aur.archlinux.org/swaylock-effects.git
- cd swaylock-effects
- makepkg -si
  ```
 - Install ```qimgv```.
- ```bash
+ ```console
  git clone https://aur.archlinux.org/qimgv.git
  cd qimgv
  makepkg -si
  ```
 - Install ```wlogout```.
- ```bash
+ ```console
  git clone https://aur.archlinux.org/wlogout-git.git
- cd qimgv
+ cd wlogout-git
  makepkg -si
  ```
 - Instal ```WhiteSur Icons``` for change applications icon style.
- ```bash
+ ```console
  git clone https://aur.archlinux.org/whitesur-icon-theme.git
  cd whitesur-icon-theme
  makepkg -si
