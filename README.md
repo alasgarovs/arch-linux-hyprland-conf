@@ -1,7 +1,12 @@
-# Arch Linux Hyprland Configurations Setup
+# Arch Linux [Hyprland](https://hyprland.org/) Configuration
+#### This repository contains my personal configurations for the Hyprland desktop environment. It includes configurations for various tools and applications
 
-### This repository contains my personal configurations for the Hyprland desktop environment. It includes configurations for various tools and applications
+## What is Hyprland?
+[![Header](https://raw.githubusercontent.com/vaxerski/Hyprland/main/assets/header.svg)](https://github.com/hyprwm/Hyprland)
 
+Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks.
+
+It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other wlr-based compositors and more... 
 
 ## About Tools
 
@@ -58,13 +63,13 @@ sudo pacman -Syu wofi waybar kitty thunar hyprpaper hyprlock hypridle swappy gri
  ```console
  sudo pacman -S gtk4 breeze-gtk materia-gtk-theme arc-gtk-theme gnome-tweaks
  ```
-- Install volume, brightness, notification, bluetooth tools.
+- Install default directories, volume, brightness, notification, bluetooth tools.
  ```console
- sudo pacman -S brightnessctl pavucontrol pamixer polkit-kde-agent mako blueman bluez bluez-utils
+ sudo pacman -S xdg-user-dirs brightnessctl pavucontrol pamixer polkit-kde-agent mako blueman bluez bluez-utils
+ xdg-user-dirs-update
  ```
 
 - #### And install other tools from Arch linux User Repository - ```AUR```.
- ```
 - Install ```qimgv```.
  ```console
  git clone https://aur.archlinux.org/qimgv.git
