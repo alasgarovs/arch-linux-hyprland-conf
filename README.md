@@ -1,6 +1,7 @@
 # Arch Linux [Hyprland](https://hyprland.org/) Configuration
 #### This repository contains my personal configurations for the Hyprland desktop environment. It includes configurations for various tools and applications
-![arch](https://github.com/alasgarovs/arch-linux-hyprland-conf/assets/70092601/da827315-6290-4402-9d34-23449d531530)
+![waybar](https://github.com/alasgarovs/arch-linux-hyprland-conf/assets/70092601/3bdcc97c-8dc0-46e4-8c22-0ad3bffe63df)
+
 
 
 ## What is Hyprland?
