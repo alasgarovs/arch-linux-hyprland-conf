@@ -43,8 +43,8 @@ window#waybar.chromium {
     padding: 0px 8px;
     margin-left: 0;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.877);
-    color: #00e1ff;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: #fcf15b;
 }
 
 #workspaces button {
@@ -57,13 +57,13 @@ window#waybar.chromium {
 }
   
 #workspaces button.active {
-    color: #00e1ff;
+    color: #fcf15b;
     opacity:1.0;
 }
   
 #workspaces button:hover {
     opacity:0.7;
-    color: #00e1ff;
+    color: #fcf15b;
     transition: all 0.3s ease-in-out;
 }
 
