@@ -32,21 +32,22 @@ window#waybar.chromium {
 
 #clock,
 #battery,
-#cpu,
-#memory,
-#backlight,
+#audio,
+#cpu_memory,
 #bluetooth,
 #network,
-#pulseaudio,
 #language,
-#workspaces{
+#left_tools{
     padding: 0px 8px;
-    margin-left: 0;
+    margin:0;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.904);
     color: #fcf15b;
 }
-
+#cpu, #memory, #backlight{
+    margin-right:2px;
+    margin-left:2px;
+}
 #workspaces button {
     padding: 0;
     margin: 1px;
@@ -55,7 +56,7 @@ window#waybar.chromium {
     min-width: 20px;
     min-height:5px;
 }
-  
+
 #workspaces button.active {
     color: #fcf15b;
     opacity:1.0;
@@ -107,6 +108,15 @@ label:focus {
     padding: 0 5px;
     margin: 0 5px;
     min-width: 10px;
+}
+
+#window{
+    margin:0;
+    margin-left:10px;
+}
+
+#tray{
+    margin-left:10px;
 }
 
 #tray > .passive {

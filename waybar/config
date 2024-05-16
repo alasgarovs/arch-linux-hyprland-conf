@@ -5,10 +5,7 @@
 
 
     "modules-left": [
-        "hyprland/workspaces",
-        "wlr/taskbar", 
-        "tray",
-        "hyprland/window"
+        "group/left_tools"
     ],
 
     "modules-center": [
@@ -16,14 +13,11 @@
     ],
 
     "modules-right": [
-        "cpu", 
-        "memory", 
+        "group/cpu_memory",
         "network",
         "bluetooth",
         "battery",
-        "backlight",
-        "pulseaudio",
-        "pulseaudio#microphone",
+        "group/audio",
         "hyprland/language" 
     ],
     
@@ -44,7 +38,6 @@
         }   
 	},
 
-
 	"hyprland/window": {
 		"max-length": 20,
 		"separate-outputs": true
@@ -61,6 +54,16 @@
     "tray": {
         "icon-size": 15,
         "spacing": 10
+    },
+
+    "group/left_tools": {
+        "orientation": "inherit",
+        "modules": [
+            "hyprland/workspaces",
+            "wlr/taskbar",
+            "tray",
+            "hyprland/window"
+        ]
     },
 
     "clock": {
@@ -88,19 +91,20 @@
       },
 
     "cpu": {
-        "format": "{usage}% ",
-        "on-click": "kitty -e htop"
+        "format": "{usage}% "
     },
 
     "memory": {
-        "format": "{}% ",
-        "on-click": "kitty -e htop"
+        "format": " {}% "
     },
     
-
-    "backlight": {
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    "group/cpu_memory": {
+        "orientation": "inherit",
+        "on-click": "kitty -e htop",
+        "modules": [
+            "cpu",
+            "memory"
+        ]
     },
 
     "battery": {
@@ -125,8 +129,16 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
 
+    "bluetooth": {
+        "format": "{status} ",
+        "format-disabled": "{status} ",
+        "format-off": "{status} ",
+        "interval": 30,
+        "on-click": "blueman-manager"
+    },
+
     "pulseaudio": {
-        "format": "{volume}% {icon}",
+        "format": "{volume}% {icon} ",
         "tooltip": false,
         "format-muted": "",
         "on-click": "pamixer -t",
@@ -145,22 +157,30 @@
     },
 
     "pulseaudio#microphone": {
-        "format": "{format_source}",
+        "format": "  {format_source}",
         "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-source-muted": "0% ",
         "on-click": "pamixer --default-source -t",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
         "scroll-step": 5
     },
 
-    "bluetooth": {
-        "format": "{status} ",
-        "format-disabled": "{status} ",
-        "format-off": "{status} ",
-        "interval": 30,
-        "on-click": "blueman-manager"
+    "backlight": {
+        "format": "{percent}% {icon} ",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
+    "group/audio": {
+        "orientation": "inherit",
+        "modules": [
+            "backlight",
+            "pulseaudio",
+            "pulseaudio#microphone"
+        ]
     }
+
+
 
 }
 
