@@ -10,7 +10,7 @@
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color:transparent;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -19,15 +19,6 @@ window#waybar {
 window#waybar.hidden {
     opacity: 0.2;
 }
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -43,74 +34,49 @@ window#waybar.chromium {
 #battery,
 #cpu,
 #memory,
-#disk,
-#temperature,
 #backlight,
 #bluetooth,
 #network,
-#custom-power,
 #pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
 #language,
-#idle_inhibitor,
-#scratchpad,
-#mpd {
+#workspaces{
     padding: 0px 8px;
     margin-left: 0;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #ffffff;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: #00e1ff;
 }
 
 #workspaces button {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 15px;
     padding: 0;
     margin: 1px;
-    color: grey;
-    background: rgb(0, 0, 0);
     transition: all 0.3s ease-in-out;
-    opacity:0.6;
+    opacity:0.7;
     min-width: 20px;
     min-height:5px;
-  }
+}
   
-  #workspaces button.active {
-    background-color: rgb(255, 255, 255);
-    color: #000000;
+#workspaces button.active {
+    color: #00e1ff;
     opacity:1.0;
-  }
+}
   
-  #workspaces button:hover {
-      opacity:0.7;
-  }
+#workspaces button:hover {
+    opacity:0.7;
+    color: #00e1ff;
+    transition: all 0.3s ease-in-out;
+}
 
-  #taskbar button {
+#taskbar button {
     margin:0;
     padding: 0px 5px 0px 5px;
-  }
-  #clock {
-    padding-right: 50px;
+}
+#clock {
     margin-right: 2px;
-  }
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
 }
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: #00ff15;
 }
 
 @keyframes blink {
@@ -121,8 +87,7 @@ window#waybar.chromium {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
+    color: #f53c3c;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -134,44 +99,15 @@ label:focus {
     background-color: #000000;
 }
 
-
-
 #network.disconnected {
-    background-color: #f53c3c;
+    color: #f53c3c;
 }
 
-
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+#language {
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 10px;
 }
-
-#wireplumber.muted {
-    background-color: #f53c3c;
-}
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-#temperature {
-    background-color: #f0932b;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
-}
-
 
 #tray > .passive {
     -gtk-icon-effect: dim;
@@ -180,55 +116,4 @@ label:focus {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
-}
-
-
-#idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
-}
-
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
-
-#language {
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
 }
