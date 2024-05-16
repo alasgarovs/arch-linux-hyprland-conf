@@ -31,7 +31,6 @@ window#waybar.chromium {
 
 
 #clock,
-#battery,
 #audio,
 #cpu_memory,
 #bluetooth,
@@ -44,10 +43,7 @@ window#waybar.chromium {
     background-color: rgba(0, 0, 0, 0.904);
     color: #fcf15b;
 }
-#cpu, #memory, #backlight{
-    margin-right:2px;
-    margin-left:2px;
-}
+
 #workspaces button {
     padding: 0;
     margin: 1px;
@@ -71,9 +67,6 @@ window#waybar.chromium {
 #taskbar button {
     margin:0;
     padding: 0px 5px 0px 5px;
-}
-#clock {
-    margin-right: 2px;
 }
 
 #battery.charging, #battery.plugged {
@@ -105,9 +98,7 @@ label:focus {
 }
 
 #language {
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 10px;
+    min-width: 20px;
 }
 
 #window{
