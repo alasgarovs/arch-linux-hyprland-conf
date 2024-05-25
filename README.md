@@ -104,7 +104,7 @@ Install default directories, volume, brightness, notification, bluetooth tools.
 #### And install other tools from Arch linux User Repository - ```AUR```
 
  ```console
-yay -S qimgv whitesur-icon-theme hyprpicker-git
+yay -S qimgv whitesur-icon-theme hyprpicker-git wlogout
  ```
 
 ## Note

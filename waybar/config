@@ -17,9 +17,17 @@
         "network",
         "bluetooth",
         "group/audio",
-        "hyprland/language" 
+        "hyprland/language",
+        "custom/power"
     ],
     
+    "custom/power":{ 
+        "format":"",
+        "on-click": "wlogout --protocol layer-shell",
+        "tooltip-format": " Power Menu "
+
+    },
+
     "hyprland/language": {
         "format": "{short}"
     },
@@ -51,7 +59,17 @@
         "icon-size": 18,
         "tooltip-format": "{title}",
         "on-click": "activate",
-        "on-click-middle": "close"
+        "on-click-middle": "close",
+        "ignore-list": [
+           "kitty"
+        ],
+        "app_ids-mapping": {
+          "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
     },
 
     "tray": {
@@ -63,8 +81,8 @@
         "orientation": "inherit",
         "modules": [
             "hyprland/workspaces",
-            "wlr/taskbar",
             "tray",
+            "wlr/taskbar",
             "hyprland/window"
         ]
     },
@@ -121,7 +139,7 @@
 
     "bluetooth": {
         "format": "{status} ",
-        "format-disabled": "{status} ",
+        "format-disabled": "off ",
         "format-off": "{status} ",
         "interval": 30,
         "on-click": "blueman-manager"
@@ -136,7 +154,8 @@
         "format": "{capacity}% {icon} ",
         "format-charging": "{capacity}%  ",
         "format-plugged": "{capacity}%  ",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "on-click": ""
     },
 
     "pulseaudio": {
@@ -170,7 +189,8 @@
 
     "backlight": {
         "format": "・ {percent}% {icon} ・ ",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip-format":" {percent}% {icon} "
     },
 
     "group/audio": {

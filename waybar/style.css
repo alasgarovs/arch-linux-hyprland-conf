@@ -1,6 +1,6 @@
 * {
 
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 13px;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -11,8 +11,7 @@
 
 window#waybar {
     background-color:transparent;
-    color: #ffffff;
-    transition-property: background-color;
+    color: #FEF0C3;
     transition-duration: .5s;
 }
 
@@ -21,15 +20,15 @@ window#waybar.hidden {
 }
 
 window#waybar.termite {
-    background-color: #3F3F3F;
+    background-color: transparent;
 }
 
 window#waybar.chromium {
-    background-color: #000000;
+    background-color: transparent;
     border: none;
 }
 
-
+#custom-power,
 #clock,
 #audio,
 #cpu_memory,
@@ -40,8 +39,8 @@ window#waybar.chromium {
     padding: 0px 8px;
     margin:0;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.904);
-    color: #fcf15b;
+    background-color: rgb(0, 0, 0);
+    color: #FEF0C3;
 }
 
 #workspaces button {
@@ -54,13 +53,13 @@ window#waybar.chromium {
 }
 
 #workspaces button.active {
-    color: #fcf15b;
+    color: #FEF0C3;
     opacity:1.0;
 }
   
 #workspaces button:hover {
     opacity:0.7;
-    color: #fcf15b;
+    color: #FEF0C3;
     transition: all 0.3s ease-in-out;
 }
 
@@ -69,8 +68,9 @@ window#waybar.chromium {
     padding: 0px 5px 0px 5px;
 }
 
+
 #battery.charging, #battery.plugged {
-    color: #00ff15;
+    color: #00ff62;
 }
 
 @keyframes blink {
@@ -108,13 +108,4 @@ label:focus {
 
 #tray{
     margin-left:10px;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
 }
