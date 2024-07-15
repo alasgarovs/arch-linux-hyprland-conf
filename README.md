@@ -40,7 +40,6 @@ It provides the latest Wayland features, is highly customizable, has all the eye
 - **swappy**: A utility for managing swap space on Linux systems.
 - **grim**: A screenshot utility for Linux.
 - **slurp**: A utility for selecting regions of the screen.
-- **copyq**: A clipboard manager for Linux, macOS, and Windows.
 - **chiplist**: A simple checklist and note-taking application for Linux.
 - **wl-clipboard**: A Wayland clipboard manager for Linux.
 
@@ -70,7 +69,7 @@ cd arch-linux-hyprland-conf
 After copy folders to ```.config``` folder under ```/home/$USER```.
 
 ```console
-mv hypr scripts swappy wallpapers waybar rofi wofi /home/$USER/.config/
+mv hypr scripts swappy wallpapers waybar rofi wofi wlogout /home/$USER/.config/
 ```
 
 ## Installation tools, themes, icons and etc
@@ -80,7 +79,7 @@ mv hypr scripts swappy wallpapers waybar rofi wofi /home/$USER/.config/
 #### We need install some tools with ```pacman```
 
 ```console
-sudo pacman -Syu wofi rofi waybar kitty thunar hyprpaper hyprlock hypridle swappy grim slurp copyq chiplist wl-clipboard
+sudo pacman -Syu wofi rofi waybar kitty thunar hyprpaper hyprlock hypridle swappy grim slurp chiplist wl-clipboard
 ```
 
 Install waybar font styles and icons.
