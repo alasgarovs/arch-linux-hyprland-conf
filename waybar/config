@@ -88,7 +88,7 @@
     },
 
     "clock": {
-        "format": "  {:%I:%M %p ・   %d/%m/%y}",
+        "format": "  {:%I:%M %p •   %d/%m/%y}",
         "rotate": 0,
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
@@ -112,16 +112,23 @@
       },
 
     "cpu": {
-        "format": "{usage}% "
+        "format": "{usage}% ",
+        "on-click": "kitty -e htop"
     },
 
     "memory": {
-        "format": " ・ {}% "
+        "format": " • {}% ",
+        "on-click": "kitty -e htop",
+        "max": 100,
+        "format-icons": {
+            "low": "",
+            "medium": "",
+            "high": ""
+        }
     },
-    
+
     "group/cpu_memory": {
         "orientation": "inherit",
-        "on-click": "kitty -e htop",
         "modules": [
             "cpu",
             "memory"
@@ -178,7 +185,7 @@
     },
 
     "pulseaudio#microphone": {
-        "format": " ・ {format_source}",
+        "format": " • {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "0% ",
         "on-click": "pamixer --default-source -t",
@@ -188,7 +195,7 @@
     },
 
     "backlight": {
-        "format": "・ {percent}% {icon} ・ ",
+        "format": "• {percent}% {icon} • ",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "tooltip-format":" {percent}% {icon} "
     },
