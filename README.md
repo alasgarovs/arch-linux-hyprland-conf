@@ -18,7 +18,6 @@ It provides the latest Wayland features, is highly customizable, has all the eye
 #### Application Launchers
 
 - **wofi**: A fast application launcher for Linux.
-- **rofi**: A versatile application launcher and window switcher for Linux.
 
 #### Status Bars
 
@@ -40,7 +39,7 @@ It provides the latest Wayland features, is highly customizable, has all the eye
 - **swappy**: A utility for managing swap space on Linux systems.
 - **grim**: A screenshot utility for Linux.
 - **slurp**: A utility for selecting regions of the screen.
-- **chiplist**: A simple checklist and note-taking application for Linux.
+- **cliphist**: A simple checklist and note-taking application for Linux.
 - **wl-clipboard**: A Wayland clipboard manager for Linux.
 
 #### Image Viewers
@@ -69,7 +68,7 @@ cd arch-linux-hyprland-conf
 After copy folders to ```.config``` folder under ```/home/$USER```.
 
 ```console
-mv hypr scripts swappy wallpapers waybar rofi wofi wlogout /home/$USER/.config/
+mv hypr scripts swappy wallpapers waybar wofi wlogout /home/$USER/.config/
 ```
 
 ## Installation tools, themes, icons and etc
@@ -79,7 +78,7 @@ mv hypr scripts swappy wallpapers waybar rofi wofi wlogout /home/$USER/.config/
 #### We need install some tools with ```pacman```
 
 ```console
-sudo pacman -Syu wofi rofi waybar kitty thunar hyprpaper hyprlock hypridle swappy grim slurp chiplist wl-clipboard
+sudo pacman -Syu wofi waybar kitty thunar hyprpaper hyprlock hypridle swappy grim slurp cliphist wl-clipboard
 ```
 
 Install waybar font styles and icons.
@@ -97,7 +96,7 @@ Install themes, icons and set icons and themes as you want.
 Install default directories, volume, brightness, notification, bluetooth tools.
 
  ```console
- sudo pacman -S xdg-user-dirs brightnessctl pavucontrol pamixer polkit-kde-agent mako blueman bluez bluez-utils
+ sudo pacman -S xdg-user-dirs brightnessctl pavucontrol pamixer polkit-kde-agent mako blueman bluez bluez-utils gvfs thunar-volman usdisk2
  xdg-user-dirs-update
  ```
 
