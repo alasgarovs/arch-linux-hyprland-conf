@@ -46,10 +46,6 @@ It provides the latest Wayland features, is highly customizable, has all the eye
 
 - **qimgv**: A fast and lightweight image viewer for Linux.
 
-#### Icon Themes
-
-- **whitesur-icon-theme**: A modern and elegant icon theme for Linux desktops.
-
 #### Color Picker
 
 - **hyprpicker-git**: A color picker tool for Linux.
@@ -103,7 +99,7 @@ Install default directories, volume, brightness, notification, bluetooth tools.
 #### And install other tools from Arch linux User Repository - ```AUR```
 
  ```console
-yay -S qimgv whitesur-icon-theme hyprpicker-git wlogout
+yay -S qimgv hyprpicker-git wlogout
  ```
 
 ## Note
