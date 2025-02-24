@@ -48,7 +48,7 @@ It provides the latest Wayland features, is highly customizable, has all the eye
 
 #### Color Picker
 
-- **hyprpicker-git**: A color picker tool for Linux.
+- **hyprpicker**: A color picker tool for Linux.
 
 ## Configure Files
 
@@ -74,7 +74,7 @@ mv hypr scripts swappy wallpapers waybar wofi wlogout /home/$USER/.config/
 #### We need install some tools with ```pacman```
 
 ```console
-sudo pacman -Syu wofi waybar kitty thunar hyprpaper hyprlock hypridle swappy grim slurp cliphist wl-clipboard
+sudo pacman -Syu wofi waybar kitty thunar hyprpaper hyprlock hypridle swappy grim slurp cliphist wl-clipboard hyprpicker
 ```
 
 Install waybar font styles and icons.
@@ -99,7 +99,7 @@ Install default directories, volume, brightness, notification, bluetooth tools.
 #### And install other tools from Arch linux User Repository - ```AUR```
 
  ```console
-yay -S qimgv hyprpicker-git wlogout
+yay -S qimgv wlogout
  ```
 
 ## Note
