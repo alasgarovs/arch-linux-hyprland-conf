@@ -10,7 +10,7 @@ Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sa
 
 It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other wlr-based compositors and more...
 
-![desktop](https://github.com/alasgarovs/arch-linux-hyprland-conf/assets/70092601/dfa39a0a-1371-490c-8665-cb085c460852)
+![screenshot-20250414-220824](https://github.com/user-attachments/assets/dc76f8a3-cbdf-4b34-98cc-91f9864df241)
 
 
 ## About Tools
