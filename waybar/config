@@ -22,7 +22,7 @@
     ],
     
     "custom/power":{ 
-        "format":"",
+        "format":"🟢",
         "on-click": "wlogout --protocol layer-shell",
         "tooltip-format": " Power Menu "
 
@@ -59,17 +59,7 @@
         "icon-size": 18,
         "tooltip-format": "{title}",
         "on-click": "activate",
-        "on-click-middle": "close",
-        "ignore-list": [
-           "kitty"
-        ],
-        "app_ids-mapping": {
-          "firefoxdeveloperedition": "firefox-developer-edition"
-        },
-        "rewrite": {
-            "Firefox Web Browser": "Firefox",
-            "Foot Server": "Terminal"
-        }
+        "on-click-middle": "close"
     },
 
     "tray": {
@@ -82,8 +72,7 @@
         "modules": [
             "hyprland/workspaces",
             "tray",
-            "wlr/taskbar",
-            "hyprland/window"
+            "wlr/taskbar"
         ]
     },
 
@@ -166,9 +155,9 @@
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon} ",
+        "format": "{volume}% 🔊 ",
         "tooltip": false,
-        "format-muted": "",
+        "format-muted": "🔈",
         "on-click": "pamixer -t",
         "on-scroll-up": "pamixer -i 5",
         "on-scroll-down": "pamixer -d 5",
