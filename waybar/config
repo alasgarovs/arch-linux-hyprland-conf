@@ -77,7 +77,7 @@
     },
 
     "clock": {
-        "format": "  {:%I:%M %p •   %d/%m/%y}",
+        "format": "🕓 {:%I:%M %p •  %d/%m/%y}",
         "rotate": 0,
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
