@@ -10,7 +10,8 @@ Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sa
 
 It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other wlr-based compositors and more...
 
-![screenshot-20250414-220824](https://github.com/user-attachments/assets/dc76f8a3-cbdf-4b34-98cc-91f9864df241)
+<img width="1920" height="1078" alt="screenshot-20260107-013004" src="https://github.com/user-attachments/assets/3abfcb06-b23e-4cef-8e41-81eab157f04d" />
+
 
 ## About Tools
 
@@ -56,8 +57,7 @@ It provides the latest Wayland features, is highly customizable, has all the eye
 Copy repository to your local machine.
 
 ```console
-git clone https://github.com/alasgarovs/arch-linux-hyprland-conf.git
-cd arch-linux-hyprland-conf
+git clone https://github.com/alasgarovs/arch-linux-hyprland-conf.git & cd arch-linux-hyprland-conf
 ```
 
 After copy folders to ``.config`` folder under ``/home/$USER``.
@@ -68,7 +68,7 @@ mv hypr scripts swappy wallpapers waybar wofi wlogout /home/$USER/.config/
 
 ## Installation tools, themes, icons and etc
 
-#### Install the required tools via `` install.sh``
+Install the required tools via ``install.sh``
 
 ```console
 chmod +x packages/install.sh & ./packages/install.sh
