@@ -12,7 +12,6 @@ It provides the latest Wayland features, is highly customizable, has all the eye
 
 ![screenshot-20250414-220824](https://github.com/user-attachments/assets/dc76f8a3-cbdf-4b34-98cc-91f9864df241)
 
-
 ## About Tools
 
 #### Application Launchers
@@ -61,7 +60,7 @@ git clone https://github.com/alasgarovs/arch-linux-hyprland-conf.git
 cd arch-linux-hyprland-conf
 ```
 
-After copy folders to ```.config``` folder under ```/home/$USER```.
+After copy folders to ``.config`` folder under ``/home/$USER``.
 
 ```console
 mv hypr scripts swappy wallpapers waybar wofi wlogout /home/$USER/.config/
@@ -69,38 +68,11 @@ mv hypr scripts swappy wallpapers waybar wofi wlogout /home/$USER/.config/
 
 ## Installation tools, themes, icons and etc
 
-#### Install the required tools on Arch Linux using the following commands
-
-#### We need install some tools with ```pacman```
+#### Install the required tools via `` install.sh``
 
 ```console
-sudo pacman -Syu wofi waybar kitty thunar hyprpaper hyprlock hypridle swappy grim slurp cliphist wl-clipboard hyprpicker
+chmod +x packages/install.sh & ./packages/install.sh
 ```
-
-Install waybar font styles and icons.
-
- ```console
- sudo pacman -S otf-font-awesome ttf-font-awesome ttf-jetbrains-mono ttf-arimo-nerd
- ```
-
-Install themes, icons and set icons and themes as you want.
-
- ```console
- sudo pacman -S gtk4 breeze-gtk materia-gtk-theme arc-gtk-theme
- ```
-
-Install default directories, volume, brightness, notification, bluetooth tools.
-
- ```console
- sudo pacman -S xdg-user-dirs brightnessctl pavucontrol pamixer polkit-kde-agent mako blueman bluez bluez-utils gvfs thunar-volman usdisk2
- xdg-user-dirs-update
- ```
-
-#### And install other tools from Arch linux User Repository - ```AUR```
-
- ```console
-yay -S qimgv wlogout
- ```
 
 ## Note
 
