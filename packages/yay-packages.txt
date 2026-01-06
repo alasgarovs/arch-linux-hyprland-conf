@@ -1,0 +1,7 @@
+anydesk-bin
+rustdesk-bin
+zoom
+qimgv
+wlogout
+ttf-ms-fonts
+arc-gtk-theme
