@@ -68,10 +68,14 @@ mv hypr scripts swappy wallpapers waybar wofi wlogout /home/$USER/.config/
 
 ## Installation tools, themes, icons and etc
 
-Install the required tools via ``install.sh``
+Install the required tools.
 
 ```console
-chmod +x packages/install.sh & ./packages/install.sh
+# Install packages with pacman
+make get-pacman
+	
+# Install packages with yay
+make get-yay
 ```
 
 ## Note
