@@ -30,10 +30,10 @@ Configure project and install tools, themes, icons and etc.
 make configure
 
 # Install packages with pacman
-make get-pacman
+make pacman
 	
 # Install packages with yay
-make get-yay
+make yay
 ```
 ---
 
