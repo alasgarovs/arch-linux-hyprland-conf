@@ -7,11 +7,11 @@ configure:
 	@chmod +x $(DEST)/scripts/bluetoothoff.sh && echo "successfully configured: hypr scripts swappy wallpapers waybar wofi wlogout"
 
 # Install packages with pacman
-get-pacman:
-	sudo pacman -S - < packages/pacman
-	xdg-user-dirs-update
+pacman:
+	@sudo pacman -S - < packages/pacman
+	@xdg-user-dirs-update && echo "succesfully installed via pacman"
 
 # Install packages with yay
-get-yay:
-	yay -S - < packages/yay
+yay:
+	@yay -S - < packages/yay && echo "succesfully installed via yay"
 
