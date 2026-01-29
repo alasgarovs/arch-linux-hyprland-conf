@@ -9,8 +9,8 @@ This repository contains my personal configurations for the Hyprland desktop env
 Hyprland is a dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks. It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other wlr-based compositors and more...
 
 ## 📸 Preview
+<img width="1922" height="1080" alt="petronas" src="https://github.com/user-attachments/assets/c19386b8-3085-46d9-99c3-85ffae0726a7" />
 
-<img width="1920" height="1078" alt="screenshot-20260107-013004" src="https://github.com/user-attachments/assets/3abfcb06-b23e-4cef-8e41-81eab157f04d" />
 
 
 ## 🚀 Getting Started
@@ -36,7 +36,7 @@ make pacman
 make yay
 
 # Set login wallpaper
-set-login-wallpaper
+make set-login-wallpaper
 ```
 ---
 
