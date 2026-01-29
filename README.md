@@ -34,6 +34,9 @@ make pacman
 	
 # Install packages with yay
 make yay
+
+# Set login wallpaper
+set-login-wallpaper
 ```
 ---
 
