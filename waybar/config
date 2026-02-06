@@ -21,11 +21,10 @@
         "custom/power"
     ],
     
-    "custom/power":{ 
-        "format":"🟢",
+    "custom/power": {
+        "format": "⚙︎",
         "on-click": "wlogout --protocol layer-shell",
-        "tooltip-format": " Power Menu "
-
+        "tooltip-format": "Power Menu"
     },
 
     "hyprland/language": {
@@ -77,7 +76,7 @@
     },
 
     "clock": {
-        "format": "🕓 {:%I:%M %p •  %d/%m/%y}",
+        "format": "  {:%I:%M %p •   %d/%m/%y}",
         "rotate": 0,
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
@@ -148,16 +147,16 @@
             "critical": 15
         },
         "format": "{capacity}% {icon} ",
-        "format-charging": "{capacity}%  ",
+        "format-charging": "{capacity}% ⚡︎ ",
         "format-plugged": "{capacity}%  ",
         "format-icons": ["", "", "", "", ""],
         "on-click": ""
     },
 
     "pulseaudio": {
-        "format": "{volume}% 🔊 ",
+        "format": "{volume}% {icon} ",
         "tooltip": false,
-        "format-muted": "🔈",
+        "format-muted": "",
         "on-click": "pamixer -t",
         "on-scroll-up": "pamixer -i 5",
         "on-scroll-down": "pamixer -d 5",
@@ -176,7 +175,7 @@
     "pulseaudio#microphone": {
         "format": " • {format_source}",
         "format-source": "{volume}% ",
-        "format-source-muted": "0% ",
+        "format-source-muted": "0% 󰍭",
         "on-click": "pamixer --default-source -t",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
