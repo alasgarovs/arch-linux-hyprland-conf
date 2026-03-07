@@ -14,7 +14,12 @@ wl-clipboard
 otf-font-awesome
 ttf-font-awesome
 ttf-jetbrains-mono
+ttf-jetbrains-mono-nerd
 ttf-arimo-nerd
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
+ttf-firacode-nerd
+ttf-cascadia-code-nerd
 gtk4
 breeze-gtk
 materia-gtk-theme
@@ -49,3 +54,6 @@ zip
 unzip
 tree
 fastfetch
+baobab
+gparted
+fuseiso
