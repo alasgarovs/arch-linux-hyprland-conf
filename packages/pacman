@@ -23,6 +23,7 @@ ttf-cascadia-code-nerd
 gtk4
 breeze-gtk
 materia-gtk-theme
+papirus-icon-theme
 xdg-user-dirs
 brightnessctl
 pavucontrol
@@ -58,3 +59,4 @@ baobab
 gparted
 fuseiso
 fzf
+kvantum
