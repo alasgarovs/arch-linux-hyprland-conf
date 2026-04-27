@@ -103,13 +103,13 @@
         "on-click": "kitty -e htop"
     },
 
-    "custom/gpu": {
-        "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{print $1}'",
-        "interval": 3,
-        "format": " • {}% ⚙",
-        "tooltip": false,
-        "on-click": "kitty -e nvtop"
-    },
+	"custom/gpu": {
+		"exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+		"interval": 5,
+		"format": " • {}% ⚙",
+		"tooltip": false,
+		"on-click": "kitty -e nvtop"
+	},
 
     "memory": {
         "format": " • {}% ",
@@ -157,8 +157,7 @@
         "format": "{capacity}% {icon} ",
         "format-charging": "{capacity}% ⚡︎ ",
         "format-plugged": "{capacity}%  ",
-        "format-icons": ["", "", "", "", ""],
-        "on-click": ""
+        "format-icons": ["", "", "", "", ""]
     },
 
     "pulseaudio": {
