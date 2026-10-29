@@ -2,10 +2,10 @@
 DEST := /home/$(USER)/.config
 
 configure:
-	@cp -r hypr scripts swappy wallpapers waybar wofi wlogout fuzzel $(DEST)
+	@cp -r hypr scripts swappy wallpapers waybar wlogout fuzzel $(DEST)
 	@chmod +x $(DEST)/scripts/restart_waybar.sh
 	@chmod +x $(DEST)/scripts/bluetoothoff.sh 
-	@sudo cp -r fonts/* /usr/share/fonts/ && echo "✅ Successfully configured: hypr scripts swappy wallpapers waybar wofi wlogout fuzzel fonts"
+	@sudo cp -r fonts/* /usr/share/fonts/ && echo "✅ Successfully configured: hypr scripts swappy wallpapers waybar wlogout fuzzel fonts"
 
 # Install packages with pacman
 pacman:
