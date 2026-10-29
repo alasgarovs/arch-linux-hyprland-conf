@@ -1,7 +1,4 @@
-wofi
 waybar
-kitty
-thunar
 hyprpaper
 hyprlock
 hypridle
@@ -30,9 +27,6 @@ pavucontrol
 pamixer
 polkit-kde-agent
 mako
-blueman
-bluez
-bluez-utils
 gvfs
 thunar-volman
 udisks2
@@ -61,3 +55,9 @@ fuseiso
 fzf
 vlc
 fuzzel
+konsole
+dolphine
+archlinux-xdg-menu
+plasma-integration
+breeze
+kde-cli-tools
