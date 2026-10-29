@@ -19,7 +19,7 @@
         "hyprland/language",
         "custom/power"
     ],
-    
+
     "custom/power": {
         "format": "󰐥",
         "on-click": "wlogout --protocol layer-shell",
@@ -44,7 +44,7 @@
         },
         "persistent-workspaces": {
             "*": 3
-        }   
+        }
 	},
 
 	"hyprland/window": {
@@ -100,7 +100,7 @@
 
     "cpu": {
         "format": "{usage}%  ",
-        "on-click": "kitty -e htop"
+        "on-click": "konsole -e htop"
     },
 
 	"custom/gpu": {
@@ -108,12 +108,12 @@
 		"interval": 5,
 		"format": " • {}% ⚙",
 		"tooltip": false,
-		"on-click": "kitty -e nvtop"
+		"on-click": "konsole -e nvtop"
 	},
 
     "memory": {
         "format": " • {}% ",
-        "on-click": "kitty -e htop",
+        "on-click": "konsole -e htop",
         "max": 100,
         "format-icons": {
             "low": "",
@@ -208,4 +208,3 @@
 
 
 }
-
